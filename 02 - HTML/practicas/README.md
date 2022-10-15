@@ -1,37 +1,124 @@
-# Prácticas HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="witdth=device-width, initial-scale=1.0">
+    <title>Donuts El Pimpollo</title>
+</head>
+<body>
+    <header>
+        <h1>Donuts El Pimpollo, desde 2022</h1>
+    </header>
+    
+    <section>
+        <img src="./pimpollo.png" alt="Logo pimpollo">
+        
+        <h2>Menu</h2>
+        <h3>Donuts grandes</h3>
+        <ul>
+            <li>Bavaria...............$7</li>
+            <li>Chocolate.............$7</li>
+            <li>Arcoiris..............$7</li>
+            <li>Fudge.................$7</li>        
+        </ul>
 
-Para la práctica de esta semana tendrán que maquetar en HTML el siguiente caso y generar su repositorio con el ejercicio.
-<br>
-Recordemos que solamente se necesita maquetar como un prototipo, **no es necesario que tenga funcionalidad completa en la información**
+        <h3>Donuts pequenas</h3>
+        <p>Con tu relleno favorito</p>
+        <ul>
+            <li>Bavaria...............$4</li>
+            <li>Chocolate.............$4</li>
+            <li>Arcoiris..............$4</li>
+            <li>Fudge.................$4</li>        
+        </ul>
 
-## **Caso: Pastelería**
-<br>
+        <h3>Especiales</h3>
+        <p>Haz tu combo con refresco por $5 más</p>
+        <dl>
+            <dl><b>Power</b></dl>
+            <dd>-Chocolate y oreo</dd>
+            <dl><b>Sugoi</b></dl>
+            <dd>-Vainilla con menta</dd>
+            <dl><b>Win Win</b></dl>
+            <dd>-Fresa y manjar</dd>
+        </dl>
+    </section>
+    
+    <section>
+        <h2>Ubicacion</h2>
+        <h3>Sucursales</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicacion</th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Centro</td>
+                <td><a href="https://goo.gl/maps/eAdJKDBXgUf1TyW76" target="_blank">Jirón de la Unión 599</a></td>
+                <td>L - D 24H</td>
+            </tr>
+            <tr>
+                <td>Sur</td>
+                <td><a href="https://goo.gl/maps/hoTG7FC3oRo528fc6" target="_blank">Av. Garcilaso de la Vega 1337</a></td>
+                <td>L - D 5pm - 3am</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td><a href="https://goo.gl/maps/NxWAPnbUPUtrgwrT7" target="_blank">Av. Universitaria 2494</a></td>
+                <td>M - D 5pm - 3am</td>
+            </tr>
+        </table>
+    </section>
 
-Descripción:<br>
-- El cliente de la pastelería necesita ver los diferentes sabores de pasteles, así como los precios de cada uno.
-- El cliente de la pastelería necesita ver los diferentes adornos con los que se puede decorar el pastel y los precios de cada uno.
-- El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias.
-- El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias.
-- El cliente de la pastelería necesita poner en un formulario su pedido.
-- El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, Descripción general del pastel y la selección de sabores y adornos.
-- El pastelero necesita tener la información de la cantidad de sabores que le quedan para hacer los pasteles.
-- El pastelero necesita tener la información de la cantidad de adornos que le quedan para hacer los pasteles.
-- El pastelero necesita una tabla donde aparezcan los pedidos que se han realizado con los datos del formulario.
-- La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención.
+    <hr>
 
-## Prácticas a Realizar
-**Tienen hasta el 4 de Marzo**
+    <section>
+        <h2>Pedidos</h2>
+        <h3>Haz tu pedido</h3>
+        
+        </form>
+            <p>¿De qué local quieres?</p>
+            <select>
+                <option value="Norte">Norte</option>
+                <option value="Centro">Centro</option>
+                <option value="Sur">Sur</option>
+            </select>
 
-Prácticas:
-- Crear marca de la pastelería como un logo y los mensajes que daremos desde la marca.
-- Maquetación de páginas de cliente de la pastelería.
-- Maquetación de páginas del pastelero.
+            <p>¿Qué donuts quieres?</p>
+            <input type="checkbox" id="Bavaria" name="Bavaria" value="Bavaria">
+            <label for="Bavaria">Bavaria</label>
+            <input type="number" id="BavariaNumber" name="BavariaNumber" placeholder="Cuantos?">
+            <br>
+            <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate">
+            <label for="Chocolate">Chocolate</label>
+            <input type="number" id="ChocolateNumber" name="ChocolateNumber" placeholder="Cuantos?">
+            <br>
+            <input type="checkbox" id="Arcoiris" name="Arcoiris" value="Arcoiris">
+            <label for="Arcoiris">Arcoiris</label>
+            <input type="number" id="ArcoirisNumber" name="ArcoirisNumber" placeholder="Cuantos?">
+            <br>
+            <input type="checkbox" id="Fudge" name="Fudge" value="Fudge">
+            <label for="Fudge">Fudge</label>
+            <input type="number" id="FudgeNumber" name="FudgeNumber" placeholder="Cuantos?">
+            
+            <br><br>
+            
+            <label for="Nombre">Nombre:</label><br>
+            <input type="text" id="Nombre" name="Nombre" placeholder="¿Cómo te llamas?">
 
-Bonus:
-En caso de que te quede corto el ejercicio siguele con esto!
-- Bonus de estilos (Intro a CSS)
-- Bonus de Rutas (Navegación en la página)
-- Bonus de despliegue (Montar la página en línea con dominio gratuito)
+            <br><br>
+            <label for="Telefono">Teléfono:</label><br>
+            <input type="text" id="Telefono" name="Telefono" placeholder="¿Tu teléfono?">
 
-## El 4 de Marzo se subirá el Form para que entreguen las prácticas. 
-***¡Vámonos hasta el espacio y más allá Explorers!***
+            <br><br>
+            <label for="Direccion">Direccion:</label><br>
+            <input type="text" id="Direccion" name="Direccion" placeholder="¿A dónde lo mandamos?">
+
+            <br><br>
+            <button type="submit">Enviar pedido</button>
+            <br><br>
+        </form>
+    </section>
+</body>
+</html>
